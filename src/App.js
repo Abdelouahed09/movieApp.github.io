@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import Movie from "./components/Movie";
 import { BsFilm } from "react-icons/bs";
 
-const MOVIES_API = `https://api.themoviedb.org/3/movie/popular?api_key=58e0be201a84cc581c4304b5ab5ec0d4&language=en-US&page=1`;
+const { REACT_APP_TMDB_KEY } = process.env;
 
-const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=58e0be201a84cc581c4304b5ab5ec0d4&query=`;
+const MOVIES_API = `https://api.themoviedb.org/3/movie/popular?api_key=${REACT_APP_TMDB_KEY}&language=en-US&page=1`
+
+const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${REACT_APP_TMDB_KEY}&query=`
 
 function App() {
   const [movies, setMovies] = useState([]);
