@@ -2,7 +2,7 @@
 
 Welcome to my Movie App source code!
 
-If you're looking for my actual Movie App just go here -> https://movieapp-abdel1.netlify.app/
+If you're looking for my actual Movie App just go here -> https://movieapp-imdb.netlify.app/
 
 ![Project Screenshot](/src/assets/movieapp.gif)
 
